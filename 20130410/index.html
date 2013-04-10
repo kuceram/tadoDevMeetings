@@ -173,7 +173,11 @@ environments {
          } },
          { src: '../lib/revealjs/plugin/notes/notes.js', async: true, condition: function () {
             return !!document.body.classList;
-         } }
+         } },
+
+         { src: '//cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.10/socket.io.min.js', async: true },
+         { src: '../lib/revealjs/plugin/multiplex/client.js', async: true },
+         { src: '../lib/revealjs/plugin/multiplex/master.js', async: true }
          // { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
          // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
       ]
