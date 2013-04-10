@@ -59,10 +59,10 @@
          <section>
             <h2>Cached Resources plugin</h2>
 
-            <div style="">"... automatically creating safe unique filenames for your resources ..."
+            <div style="font-style: italic">"&hellip; automatically creating safe unique filenames for your resources &hellip;"
             </div>
-            <div style="">
-               <img src="http://i.imgur.com/0rSPG0X.jpg" style="width: 60.0%;">
+            <div style="" class="fragment">
+               <img src="hash.jpg" style="width: 60.0%;">
             </div>
             <div style="">
                <a href="http://grails.org/plugin/cached-resources" rel="noreferrer">http://grails.org/plugin/cached-resources</a>
@@ -74,11 +74,11 @@
             <h2>Hash &amp; cache + bundle</h2>
 
             <div style="width: 50.0%;float: left;">
-               <img src="http://i.imgur.com/izobLY4.png" style="width: 90.0%;">
+               <img src="files_develop.png" style="width: 90.0%;">
                development
             </div>
             <div style="width: 50.0%;float: right;">
-               <img src="http://i.imgur.com/6u2xiyU.png" style="width: 90.0%;">
+               <img src="files_production.png" style="width: 90.0%;">
                production
             </div>
 
@@ -100,6 +100,17 @@ environments {
 
          </section>
       </section>
+
+      <section>
+        <h2>git PS1</h2>
+         <img src="ps1.png" style="width: 90.0%;">
+
+         <pre><code class="bash">
+ export GIT_PS1_SHOWDIRTYSTATE=true
+ export PS1=" &hellip; \$(__git_ps1 ' (%s)') &hellip; "
+         </code></pre>
+      </section>
+
       <section>
          <a href="https://github.com/macrosak/tadoDevMeetings"
             style="width: 149px; height: 149px; background: url('https://s3.amazonaws.com/github/ribbons/forkme_left_orange_ff7600.png') no-repeat; display: block"></a>
