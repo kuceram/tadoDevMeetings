@@ -132,6 +132,17 @@ environments {
 
    // Full list of configuration options available here:
    // https://github.com/hakimel/reveal.js#configuration
+   var multiplex = {
+      secret: null,
+      socketId: "47c36c17fffd7c5e",
+      url: 'revealjs.jit.su:80'
+   }
+
+   if (location.search.indexOf('master') >= 0) {
+      multiplex.secret = "13655869758252677986";
+   }
+
+
    Reveal.initialize({
       controls: true,
       progress: true,
@@ -140,6 +151,8 @@ environments {
 
       theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
       transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+      multiplex: multiplex,
 
       // Optional libraries used to extend on reveal.js
       dependencies: [
@@ -164,6 +177,8 @@ environments {
          // { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
          // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
       ]
+
+
    });
 
 </script>
