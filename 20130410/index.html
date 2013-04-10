@@ -132,15 +132,15 @@ environments {
 
    // Full list of configuration options available here:
    // https://github.com/hakimel/reveal.js#configuration
-//   var multiplex = {
-//      secret: null,
-//      socketId: "47c36c17fffd7c5e",
-//      url: 'revealjs.jit.su:80'
-//   }
-//
-//   if (location.search.indexOf('master') >= 0) {
-//      multiplex.secret = "13655869758252677986";
-//   }
+   var multiplex = {
+      secret: null,
+      id: "47c36c17fffd7c5e",
+      url: 'revealjs.jit.su:80'
+   }
+
+   if (location.search.indexOf('master') >= 0) {
+      multiplex.secret = "13655869758252677986";
+   }
 
 
    Reveal.initialize({
@@ -152,11 +152,7 @@ environments {
       theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
       transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
 
-      multiplex: {
-         secret: "13655869758252677986",
-         id: "47c36c17fffd7c5e",
-         url: 'revealjs.jit.su:80'
-      },
+      multiplex: multiplex,
 
       // Optional libraries used to extend on reveal.js
       dependencies: [
