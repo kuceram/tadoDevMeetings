@@ -65,7 +65,7 @@
 
       </section>
       <section>
-         <h2>ThermostatOperation refactoring</h2>
+         <h3>ThermostatOperation refactoring <span style="color: #fab907;">before</span></h3>
 
 <pre><code class="java">
    UNDEFINED,
@@ -88,9 +88,10 @@
       </section>
 
       <section>
+         <h3>ThermostatOperation refactoring <span style="color: #fab907;">after</span></h3>
 
 <pre style="width: 45%; float: left"><code class="java">
- public enum ThermostatOperation {
+ enum ThermostatOperation {
     HOME,
     SLEEP,
     AWAY,
@@ -107,7 +108,12 @@
    STALE_USER
  }
 
-   
+
+</code></pre>
+         <div style="clear: both"></div>
+<pre style="width: 100%"><code class="java">
+   boolean srvBoxConnected
+
 </code></pre>
 
 
